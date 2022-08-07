@@ -1,0 +1,170 @@
+@font-face {
+	font-family: 'Public Sans';
+	src: url('../font/public-sans/PublicSans-Regular.otf') format('opentype');
+}
+
+:root {
+	--fb-primary: #257ecb;
+	--fb-secondary: #9adfff;
+	--fb-tertiary: #33c1a1;
+}
+
+.container {
+	padding: 0 2em;
+}
+
+.fb-primary {
+	background-color: var(--fb-primary);
+}
+
+.fb-secondary {
+	background-color: var(--fb-secondary);
+}
+
+.fb-tertiary {
+	background-color: var(--fb-tertiary);
+}
+
+.text-fb-primary {
+	color: var(--fb-primary);
+}
+
+.text-fb-secondary {
+	color: var(--fb-secondary);
+}
+
+.text-fb-tertiary {
+	color: var(--fb-tertiary);
+}
+
+.navbar {
+	padding: 1em 0;
+}
+
+.brand-logo {
+	height: 4rem;
+}
+
+.btn-fb-primary {
+	color: #fff;
+	border: none;
+	background-color: var(--fb-tertiary);
+}
+
+.btn-fb-primary:hover,
+.btn-fb-primary:focus,
+.btn-fb-primary:active {
+	color: var(--fb-tertiary) !important;
+	border: none !important;
+	background-color: #fff !important;
+}
+
+.navbar-toggler {
+	border: 1px solid #fff;
+	background-color: #fff;
+}
+
+.navbar-toggler:hover,
+.navbar-toggler:focus,
+.navbar-toggler:active {
+	box-shadow: none;
+}
+
+.navbar-toggler > i {
+	color: var(--fb-primary);
+}
+
+#home-hero,
+#about-hero {
+	min-height: calc(100vh - 8rem);
+	background-size: cover;
+	background-position: center;
+}
+
+#home-hero .container {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+#about-hero .container {
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+section {
+	padding: 5rem 0;
+}
+
+#hero-title {
+	font-size: 3.5rem;
+	text-shadow: -2px -2px 0 #fff, 2px -2px 0 #fff, -2px 2px 0 #fff,
+		2px 2px 0 #fff;
+}
+
+#title {
+	font-size: 3.5rem;
+}
+
+.font-public-sans {
+	font-family: 'Public Sans';
+}
+
+.text-justify {
+	text-align: justify;
+}
+
+#footer {
+	padding: 2em 0;
+}
+
+#social .icon {
+	font-size: 2rem;
+}
+
+#avatar {
+	width: 5em;
+	aspect-ratio: 1;
+	background-size: cover;
+	background-position: center;
+}
+
+#avatar-testimony {
+	max-width: 8em;
+	aspect-ratio: 1;
+	background-size: cover;
+	background-position: center;
+}
+
+.program-card {
+	aspect-ratio: 1;
+	border-radius: 0.5rem;
+	background-size: cover;
+	background-position: center;
+}
+
+.article-card {
+	aspect-ratio: 4/3;
+	border-radius: 0.5rem;
+	background-size: cover;
+	background-position: center;
+}
+
+@media screen and (min-width: 992px) {
+	#home-hero .container {
+		width: 75%;
+	}
+
+	#hero-title {
+		font-size: 4rem;
+		text-shadow: -2px -2px 0 #fff, 2px -2px 0 #fff, -2px 2px 0 #fff,
+			2px 2px 0 #fff;
+	}
+
+	#title {
+		font-size: 4rem;
+	}
+}
